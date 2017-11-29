@@ -110,8 +110,8 @@ After(function(scenario) {
        
 ```
 
-#### CucumberOpts Tags
-Following configuration shows to call specific tags from feature files
+#### CucumberOpts Tags - using runner
+Following configuration shows to call specific tags from feature files using runner
 
 ```     
 cucumberOpts: {
@@ -120,6 +120,13 @@ cucumberOpts: {
     require: ["../stepDefinitions/*.js", "../support/*.js"],
     tags: "(@AllureScenario or @CucumberScenario or @ProtractorScenario)"
 }
+```
+
+#### CucumberOpts Tags - using command line arg
+Following configuration shows to call specific tags from feature files using command line
+
+```     
+protractor config/config.js --cucumberOpts.tags="@TestLogin"
 ```
 
 #### Database

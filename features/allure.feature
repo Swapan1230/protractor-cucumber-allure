@@ -6,3 +6,4 @@ Feature: To search allure reports in google
       When I type "allure reports"
       Then I click search button
       Then I clear search textbox
+      And I navigate to www.walla.co.il
